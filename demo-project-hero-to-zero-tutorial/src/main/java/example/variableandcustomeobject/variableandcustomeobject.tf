@@ -85,3 +85,20 @@ output "printlist" {
   value = "first value in list ${var.ec2_instance[0]} and second ${var.ec2_instance[1]} and third value ${var.ec2_instance[2]}"
 }
 
+###############################3333 tuple example
+variable "network__address" {               # it is aaa ordered ccollection  of item
+  type = tuple([string,string,number])
+  default = ["192.168.12.100","192.168.11.100",1234]
+}
+output "printtuple" {
+  value = "the tuple value is ::${var.network__address[0]} and the second     value is ${var.network__address[2]}"
+}
+
+
+##############################################  printing  value from variablefile.tfvars
+
+
+
+output "printtfvarsfilecontent" {
+  value = "the  subnet id is ${}"
+}
