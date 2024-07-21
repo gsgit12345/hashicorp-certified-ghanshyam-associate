@@ -11,7 +11,8 @@
   <url>http://maven.apache.org</url>
     <modules>
         <module>demo-project-hero-to-zero-tutorial</module>
-        <module>demo-project-terraform-aws-tutorial</module>
+      <module>demo-project-terraform-aws-tutorial</module>
+
     </modules>
 
     <properties>
