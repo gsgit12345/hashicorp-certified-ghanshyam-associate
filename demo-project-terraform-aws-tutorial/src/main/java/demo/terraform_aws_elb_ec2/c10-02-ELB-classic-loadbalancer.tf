@@ -25,6 +25,7 @@ module "elb" {
     },
   ]
 
+
   health_check = {
     target              = "HTTP:80/"
     interval            = 30
